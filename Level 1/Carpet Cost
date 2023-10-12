@@ -1,0 +1,12 @@
+def ccost():
+    carpet=length*width*price
+    grippers=length+width
+    underlay=width*length*2
+    fitting=50
+    return fitting+grippers+carpet+underlay
+width=int(input())
+length=int(input())
+price=int(input())
+a=str(ccost())
+cost=("£"+a)
+print("The total cost is",cost)
