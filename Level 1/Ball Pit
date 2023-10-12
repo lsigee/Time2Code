@@ -1,0 +1,16 @@
+def bpvolume():
+    return pi*(bpradius**2)*bpheight
+def bvolume():
+    return (4/3)*pi*(bradius**3)
+pi=3.142
+bpradius=1
+bpheight=1
+bradius=0.05
+packingdensity=0.75
+b=(bpvolume()/bvolume()*packingdensity)
+balls=(b//1)
+if b-balls>0.5:
+    balls=int(balls+1)
+else:
+    balls=int(balls)
+print("You need",balls,"balls to fill up the ball pit")
