@@ -1,43 +1,41 @@
+import random
 def die():
-    def dice(one):
+    if numba==1:
+        print("ooooooooooo")
+        print("o         o")
+        print("o    X    o")
+        print("o         o")
         return("ooooooooooo")
-        return("o         o")
-        return("o    X    o")
-        return("o         o")
+    if numba==2:
+        print("ooooooooooo")
+        print("o      X  o")
+        print("o         o")
+        print("o  X      o")
         return("ooooooooooo")
-    def dice(two):
+    if numba==3:
+        print("ooooooooooo")
+        print("o      X  o")
+        print("o    X    o")
+        print("o  X      o")
         return("ooooooooooo")
-        return("o      X  o")
-        return("o         o")
-        return("o  X      o")
+    if numba==4:
+        print("ooooooooooo")
+        print("o  X   X  o")
+        print("o         o")
+        print("o  X   X  o")
         return("ooooooooooo")
-    def dice(three):
+    if numba==5:
+        print("ooooooooooo")
+        print("o  X   X  o")
+        print("o    X    o")
+        print("o  X   X  o")
         return("ooooooooooo")
-        return("o      X  o")
-        return("o    X    o")
-        return("o  X      o")
+    if numba==6:
+        print("ooooooooooo")
+        print("o  X   X  o")
+        print("o  X   X  o")
+        print("o  X   X  o")
         return("ooooooooooo")
-    def dice(four):
-        return("ooooooooooo")
-        return("o  X   X  o")
-        return("o         o")
-        return("o  X   X  o")
-        return("ooooooooooo")
-    def dice(five):
-        return("ooooooooooo")
-        return("o  X   X  o")
-        return("o    X    o")
-        return("o  X   X  o")
-        return("ooooooooooo")
-    def dice(six):
-        return("ooooooooooo")
-        return("o  X   X  o")
-        return("o  X   X  o")
-        return("o  X   X  o")
-        return("ooooooooooo")
-    return dice(number)
-numba=["one","two","three","four","five","six"]
-num=int(input())
-numb=num-1
-number=(numba[numb])
+numba=random.randint(0,5)
+numba=numba+1
 print(die())
