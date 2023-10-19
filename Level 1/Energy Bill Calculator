@@ -1,0 +1,12 @@
+def cost():
+    units_used=currentreading-previousreading
+    kwh=int(units_used*1.022)*(calorificvalue/3.6)
+    cost=int(kwh*0.0284)
+    return cost
+previousreading=int(input())
+currentreading=int(input())
+creading=(currentreading)
+calorificvalue=39.3
+cost=cost()
+brug="£"+str(cost)
+print("Your energy bill is",brug)
