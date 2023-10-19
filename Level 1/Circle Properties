@@ -1,0 +1,12 @@
+from math import pi
+def area():
+    area=((diameter/2)*pi)**2
+    return area
+def circumference():
+    circumference=diameter*pi
+    return circumference
+diameter=int(input())
+area=area()
+circumference=circumference()
+print("The area of the diameter's related circle is",area)
+print("The cirumference of the diameter's related circle is",circumference)
