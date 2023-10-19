@@ -1,0 +1,10 @@
+def image_size():
+    cm=μm/1000
+    imagesize=magnification*cm
+    return imagesize
+μm=int(input())
+magnification=int(input())
+imagesize=image_size()
+if (imagesize//1)-imagesize==0:
+    imagesize=int(image_size()//1)
+print("The image size of something sized",μm,"μm, magnified by",magnification,"is",imagesize,"cm")
