@@ -1,0 +1,13 @@
+def volume():
+    volume=length*width*height
+    return volume
+def ltog():
+    litres=(length*width*height)/1000
+    gallons=litres/4.546
+    return gallons
+length=int(input())
+width=int(input())
+height=int(input())
+gallons=ltog()
+volume=volume()
+print("A tank sized",length,"x",width,"x",height,"holds",volume,"ml or",gallons,"gallons")
