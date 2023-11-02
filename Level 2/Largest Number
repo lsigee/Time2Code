@@ -1,0 +1,11 @@
+def which():
+    if (first>second) and (first>third):
+        print("The largest is number: 1")
+    elif (second>first) and (second>third):
+        print("The largest is number: 2")
+    else:
+        print("The largest is number: 3")
+first=int(input("Enter the first number: "))
+second=int(input("Enter the second number: "))
+third=int(input("Enter the third number: "))
+which()
