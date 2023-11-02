@@ -1,0 +1,15 @@
+def season():
+    if month>12:
+        season="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH"
+    else:
+        if 6>month>2:
+            season="spring"
+        elif 9>month>5:
+            season="summer"
+        elif 12>month>8:
+            season="autumn"
+        else:
+            season="winter"
+    return season
+month=int(input("Enter the number of the month: "))
+print("You are currently in",season())
