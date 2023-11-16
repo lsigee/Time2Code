@@ -1,41 +1,44 @@
 import random
-def die():
-    if numba==1:
-        print("ooooooooooo")
-        print("o         o")
-        print("o    X    o")
-        print("o         o")
-        return("ooooooooooo")
-    if numba==2:
-        print("ooooooooooo")
-        print("o      X  o")
-        print("o         o")
-        print("o  X      o")
-        return("ooooooooooo")
-    if numba==3:
-        print("ooooooooooo")
-        print("o      X  o")
-        print("o    X    o")
-        print("o  X      o")
-        return("ooooooooooo")
-    if numba==4:
-        print("ooooooooooo")
-        print("o  X   X  o")
-        print("o         o")
-        print("o  X   X  o")
-        return("ooooooooooo")
-    if numba==5:
-        print("ooooooooooo")
-        print("o  X   X  o")
-        print("o    X    o")
-        print("o  X   X  o")
-        return("ooooooooooo")
-    if numba==6:
-        print("ooooooooooo")
-        print("o  X   X  o")
-        print("o  X   X  o")
-        print("o  X   X  o")
-        return("ooooooooooo")
-numba=random.randint(0,5)
-numba=numba+1
-print(die())
+i="b"
+while i!="done":
+    def die():
+        if numba==1:
+            print("ooooooooooo")
+            print("o         o")
+            print("o    X    o")
+            print("o         o")
+            return("ooooooooooo")
+        if numba==2:
+            print("ooooooooooo")
+            print("o      X  o")
+            print("o         o")
+            print("o  X      o")
+            return("ooooooooooo")
+        if numba==3:
+            print("ooooooooooo")
+            print("o      X  o")
+            print("o    X    o")
+            print("o  X      o")
+            return("ooooooooooo")
+        if numba==4:
+            print("ooooooooooo")
+            print("o  X   X  o")
+            print("o         o")
+            print("o  X   X  o")
+            return("ooooooooooo")
+        if numba==5:
+            print("ooooooooooo")
+            print("o  X   X  o")
+            print("o    X    o")
+            print("o  X   X  o")
+            return("ooooooooooo")
+        if numba==6:
+            print("ooooooooooo")
+            print("o  X   X  o")
+            print("o  X   X  o")
+            print("o  X   X  o")
+            return("ooooooooooo")
+    numba=random.randint(0,5)
+    numba=numba+1
+    print(die())
+    i=input()
