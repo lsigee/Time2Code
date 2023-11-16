@@ -1,0 +1,11 @@
+code=int(input("code = "))
+def error():
+    if code>404 or code<400 or code==402:
+        return "Unknown error"
+    if code==400:
+        return "Bad request"
+    if code==401 or code==403:
+        return "Authentication Error"
+    if code==404:
+        return "Not Found"
+print(error())
