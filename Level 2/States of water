@@ -1,0 +1,9 @@
+cent=int(input("Enter the temperature in °C: "))
+def heat():
+    if cent<=0:
+        return "solid"
+    if 0<cent<100:
+        return "liquid"
+    if cent>100:
+        return "gas"
+print("The water is in a",heat(),"state")
