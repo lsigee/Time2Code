@@ -1,0 +1,11 @@
+nitrate=float(input("Enter the nitrate level from the test: "))
+def carbon():
+    if nitrate>10:
+        return "dose 3ml of carbon"
+    if 2.5<nitrate<10:
+        return "dose 2ml of carbon"
+    if 1<nitrate<2.5:
+        return "dose 1ml of carbon"
+    if 1<nitrate:
+        return "dose 0.5ml of carbon"
+print("for",nitrate,carbon())
