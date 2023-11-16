@@ -1,0 +1,26 @@
+pound=float(input("Enter the number of Great British Pounds: "))
+currency=input("Enter the currency (USD, Euro, Yuan, Yen): ")
+currency=currency.lower()
+def conversion():
+        j=float(0)
+        if currency=="usd":
+                j=pound*1.3
+        if currency=="euro":
+            j=pound*1.11
+        if currency=="yuan":
+            j=pound*8.92
+        if currency=="yen":
+            j=pound*138.44
+        return round(j,2)
+b=conversion()
+def job():
+    if currency=="usd":
+        return "$"+str(b)
+    if currency=="euro":
+        return "€"+str(b)
+    if currency=="yuan":
+        return "¥"+str(b)
+    if currency=="yen":
+        return "¥"+str(b)
+money="£"+str(pound)
+print(money,"=",job())
