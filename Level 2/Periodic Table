@@ -1,0 +1,30 @@
+sn=input("Input element name or symbol: ")
+s=sn.lower()
+def periodic_table():
+    if s=="li" or s=="lithium":
+        print("Element: Lithium (Li)")
+        print("Atomic Weight: 6.94")
+        print("Group: Alkali Metals")
+    elif s=="na" or s=="sodium":
+        print("Element: Sodium (Na)")
+        print("Atomic Weight: 22.99")
+        print("Group: Alkali Metals")
+    elif s=="k" or s=="potassium":
+        print("Element: Potassium (K)")
+        print("Atomic Weight: 39.098")
+        print("Group: Alkali Metals")
+    elif s=="f" or s=="flourine":
+        print("Element: Flourine (F)")
+        print("Atomic Weight: 18.998")
+        print("Group: Halogens")
+    elif s=="cl" or s=="chlorine":
+        print("Element: Chlorine (Cl)")
+        print("Atomic Weight: 35.45")
+        print("Group: Halogens")
+    elif s=="br" or s=="bromine":
+        print("Element: Bromine (Br)")
+        print("Atomic Weight: 79.904")
+        print("Group: Halogens")
+    else:
+        print("Element not in catalogue")
+periodic_table()
