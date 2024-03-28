@@ -1,0 +1,11 @@
+def carval(value, resaleval):
+    year=0
+    depreciation=0.75
+    while value>=resaleval and resaleval>0 and year<5:
+        print("in year",year,"your car was worth ",value)
+        value=int(value*depreciation)
+        year=year+1
+    print("Part exchange before the end of year",year)
+value=int(input("Enter the price of the car purchased: "))
+resaleval=int(input("Enter the minimum part exchange value: "))
+carval(value, resaleval)
