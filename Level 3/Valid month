@@ -1,0 +1,6 @@
+def validate_month():
+    month=int(input("Enter a month 1-12: "))
+    while month>12 or month<1:
+        month=int(input("Enter a month 1-12: "))
+    print("Thank you. Input Accepted")
+validate_month()
