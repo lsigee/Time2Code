@@ -1,0 +1,12 @@
+def interest(bal,rate,tarbal):
+    year=1
+    rate=1+(rate/100)
+    while bal<tarbal:
+        bal=bal*rate
+        bal=int(bal//1)
+        print("Year ",year,": Balance = ",bal)
+        year=year+1
+bal=int(input("Enter the balance to the nearest pound: "))
+rate=int(input("Enter the % rate of interest: "))
+tarbal=int(input("Enter the targe balance to the nearest pound: "))
+interest(bal,rate,tarbal)
