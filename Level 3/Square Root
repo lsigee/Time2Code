@@ -1,0 +1,16 @@
+def sqroot():
+    x=float(input("Enter a squared number: "))
+    root=1
+    rootlist=[x]
+    last_root=0
+    while root!=last_root:
+        root=0.5 * (root + (x / root))
+        last_root=rootlist[-1]
+        rootlist.append(root)
+    if x//1==x and root//1==root:
+        x=int(x)
+        root=int(root)
+    elif x//1==x:
+        x=int(x)
+    print("The square root of",x,"is",root)
+sqroot()
