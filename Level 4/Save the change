@@ -1,0 +1,17 @@
+def pound():
+    money=float(input("Enter the purchase price: "))
+    if money//1==money:
+        bab="$"+str(money)+"0"
+        print("Debit -",bab)
+        print("Credit to savings - $0.00")
+    else:
+        debi=money//1
+        debit=debi+1
+        deb="$"+str(debi+1)+"0"
+        sub=money*100
+        subd=debit*100
+        credit=(subd-sub)/100
+        credit=format(credit, '.2f')
+        print("Debit -",deb)
+        print("Credit - $",credit,sep="")
+pound()
