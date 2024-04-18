@@ -1,0 +1,17 @@
+def feet_to_inches():
+    num=float(input("Input feet as a decimal: "))
+    print(num,"feet =",num*12,"inches")
+def inches_to_feet():
+    num=float(input("Input inches as a decimal: "))
+    print(num,"inches =",num/12,"feet")
+def converter():
+    menu=int(input("Type 1 to convert feet to inches, type 2 to convert inches to feet, type 3 to quit: "))
+    if menu==1:
+        feet_to_inches()
+    elif menu==2:
+        inches_to_feet()
+    elif menu==3:
+        print("Goodbye")
+    else:
+        converter()
+converter()
