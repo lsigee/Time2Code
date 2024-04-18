@@ -1,0 +1,17 @@
+def adder():
+    a=0
+    list=[]
+    while a!="e:":
+        a=input("Enter number: ")
+        if a!="e":
+            a=float(a)
+            list.append(a)
+        else:
+            b=float((sum(list)))
+            average=round(float(b)/len(list), 1)
+            total=b
+            top=max(list)
+            bottom=min(list)
+            print("Total:",total,"Top:",top,"Bottom:",bottom,"Average:",average)
+            break
+adder()
