@@ -1,0 +1,6 @@
+import random
+def dice():
+    num=int(input("Roll a D"))
+    roll=random.randint(0,num)
+    print("you rolled a",roll)
+dice()
