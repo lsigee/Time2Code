@@ -1,0 +1,16 @@
+def pin():
+    pin=7528
+    attempt=0
+    count=0
+    while attempt!=7528 and count!=3:
+        attempt=int(input("Enter PIN: "))
+        count=count+1
+        if attempt!=pin:
+            b=False
+        else:
+            b=True
+    if b==True:
+        print("Security Check Passed")
+    elif b==False:
+        print("Locked Out")
+pin()
