@@ -1,0 +1,16 @@
+def leap():
+    year=int(input("Input a year: "))
+    a=True
+    b=False
+    c=False
+    if year//4==year/4:
+        b=True
+    if year//100==year/100:
+        a=False
+    if year//400==year/400:
+        c=True
+    if (a and b)==True or c==True:
+        print(year,"is a leap year")
+    else:
+        print(year, "isn't a leap year")
+leap()
