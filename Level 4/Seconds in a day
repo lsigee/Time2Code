@@ -1,0 +1,8 @@
+def sth():
+    seconds=int(input("How many seconds: "))
+    h=seconds//3600
+    hremainder=seconds%3600
+    m=hremainder//60
+    s=hremainder%60
+    print(h,"hours",m,"minutes",s,"seconds")
+sth()
