@@ -1,0 +1,51 @@
+import random
+def rps():
+    ccount=0
+    count=0
+    while ccount!=3 or count!=3:
+        rps=input("Rock, Paper, Scissors: ")
+        rps=rps.lower()
+        c=random.randint(1,3)
+        match c:
+            case 1:
+                c="rock"
+            case 2:
+                c="paper"
+            case 3:
+                c="scissors"
+        if c==rps:
+            print("draw")
+            print(count,"-",ccount)
+        if c=="rock" and rps=="scissors":
+            print("Computer wins")
+            ccount=ccount+1
+            print(count,"-",ccount)
+        if c=="scissors" and rps=="paper":
+            print("Computer wins")
+            ccount=ccount+1
+            print(count,"-",ccount)
+        if c=="paper" and rps=="rock":
+            print("Computer wins")
+            ccount=ccount+1
+            print(count,"-",ccount)
+        if c=="rock" and rps=="paper":
+            print("You win")
+            count=count+1
+            print(count,"-",ccount)
+        if c=="scissors" and rps=="rock":
+            print("You win")
+            count=count+1
+            print(count,"-",ccount)
+        if c=="paper" and rps=="scissors":
+            print("You win")
+            count=count+1
+            print(count,"-",ccount)
+        if ccount==3:
+            break
+        if count==3:
+            break
+    if ccount>count:
+        print("Computer wins!")
+    if count>ccount:
+        print("You win!")
+rps()
