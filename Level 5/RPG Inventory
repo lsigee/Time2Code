@@ -1,0 +1,71 @@
+def inv(inventory):
+    person=input("Whos inventory are you accessing? ")
+    name=person
+    person=person.lower()
+    match person:
+        case "craig dave":
+            person=int(0)
+        case "luke sigee":
+            person=int(1)
+    op="J"
+    print(name,"has",len(inventory[person]),"items")
+    while op.lower()!="close":
+        op=input("What action do you want to take? (add/craft/look/drop/search/close): ")
+        op=op.lower()
+        if op=="add":
+                   item=input("What item do you want to add: ")
+                   inventory[person].append(item)
+                   print("")
+                   print(inventory[person])
+        if op=="craft":
+                   craft=input("What do you want to craft: ")
+                   craft=craft.lower()
+                   if craft=="charm":
+                       try:
+                           inventory[person].index("leather")
+                           inventory[person].index("gem")
+                           inventory[person].remove("leather")
+                           inventory[person].remove("gem")
+                           inventory[person].append("charm")
+                       except ValueError:
+                           print("You do not have the items for this")
+                   else:
+                       print("That item does not exist or can't be crafted")
+                   print("")
+                   print(inventory[person])
+        if op=="look":
+            look=int(input("What inventory slot do you want to look at: "))
+            look=look-1
+            try:
+                item=inventory[person][look]
+                print("You have an",item,"in slot",look+1)
+                print("")
+            except Exception:
+                print("There is nothing in that slot")
+                print("")
+        if op=="drop":
+            drop=input("What item do you want to drop: ")
+            try:
+                print(drop,"dropped")
+                inventory[person].remove(drop)
+                print(inventory[person])
+                print("")
+            except Exception:
+                print("You do not have that item to drop")
+                print("")
+        if op=="search":
+            try:
+                search=input("What item are you looking for: ")
+                place=inventory[person].index(search)
+                place=place+1
+                print(search,"is in slot",place)
+                print("")
+            except Exception:
+                print("That item is not in your inventory")
+                print("")
+    print("")
+    print(inventory[person])
+inventory=["h","j"]
+inventory[0]=["leather","gem"]
+inventory[1]=["gun","car"]
+inv(inventory)
