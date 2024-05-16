@@ -1,0 +1,47 @@
+import random
+def pig(players,player):
+    count=1
+    def play(players,player,count,endplayer):
+        print("Player",count,"it's your turn.")
+        print("Your score is currently",players[count])
+        r=input("Type r to roll the dice: ")
+        yon="y"
+        while yon!="n":
+            a1=random.randint(1,6)
+            a2=random.randint(1,6)
+            print("")
+            print("You rolled a",a1,"and a",a2)
+            if a1!=1 and a2!=1:
+
+                print("You scored ",a1+a2)
+                temp=players[count]
+                players[count]=temp+(a1+a2)
+                print("Your total is",players[count])
+                yon=input("Do you want to continue (y/n)")
+                print("")
+            if ((a1!=1 and a2==1) or (a1==1 and a2!=1)) and players[count]>=20:
+                print("Oh no thats a pig out")
+                print("Your total is still",players[count])
+                print("Handing to next player")
+                print("")
+                break
+            if a1==1 and a2==1:
+                print("That is a double pig out")
+                players[count]=0
+                print("Your new total is 0")
+                print("Handing to next player")
+                print("")
+                break
+            elif players[count]>=20:
+                print("The winner is player",count)
+                return "540892"
+
+
+    players=[0,0,0,0,0] 
+    endplayer="4312"
+    while endplayer!="540892":
+        endplayer=play(players,player,count,endplayer)
+        count=count+1
+player=int(input("How many players (1-4): "))
+players=[]
+pig(players,player)
